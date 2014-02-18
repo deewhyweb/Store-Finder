@@ -58,18 +58,18 @@
           store: App.stores.countyStore,
           listeners: {
               change : function(select,value){
-                App.views.mainView.show();
+                App.views.mainView.enable();
                 console.log('here');
                 
               },
               blur : function(select,value){
-                App.views.mainView.show();
+                App.views.mainView.enable();
                 console.log('blurred');
                 
               },
               
               hide : function(select,value){
-                App.views.mainView.show();
+                App.views.mainView.enable();
                 console.log('hidden');
                 
               }

@@ -33,6 +33,7 @@
         listeners: {
           afterrender: function () {
             console.log('mainview afterrender');
+            this.enable();
             Ext.getCmp('storesBackButton').hide();
           }
         }
