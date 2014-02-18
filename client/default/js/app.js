@@ -1,3 +1,11 @@
+document.addEventListener( 'touchstart', function(e){ onStart(e); }, false );
+    function onStart ( touchEvent ) {
+      console.log('in here');
+      if( navigator.userAgent.match(/Android/i) ) {
+        touchEvent.preventDefault();
+      }
+    }
+
 (function () {
   "use strict";
     
