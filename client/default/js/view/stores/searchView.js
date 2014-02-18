@@ -67,7 +67,7 @@
                 console.log('blurred');
                 
               },
-              ,
+              
               hide : function(select,value){
                 App.views.mainView.show();
                 console.log('hidden');
