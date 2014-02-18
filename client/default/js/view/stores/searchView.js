@@ -50,11 +50,14 @@
       items: [{
         xtype: 'fieldset',
         title: 'Store Locator',
-        items: [new CustomSelectView({
+        items: [new Ext.form.Select({
           id: 'countySelect',
           name: 'county',
           label: 'County',
-          store: App.stores.countyStore
+          store: App.stores.countyStore,
+          listeners: {
+              beforeselect: function() {return false;}
+          }
         }).setValue(App.stores.countyStore.getAt(5).get('value')), 
         new CustomSelectView({
           id: 'productSelect',
