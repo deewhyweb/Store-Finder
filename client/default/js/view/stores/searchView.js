@@ -61,6 +61,17 @@
                 App.views.mainView.show();
                 console.log('here');
                 
+              },
+              blur : function(select,value){
+                App.views.mainView.show();
+                console.log('blurred');
+                
+              },
+              ,
+              hide : function(select,value){
+                App.views.mainView.show();
+                console.log('hidden');
+                
               }
           }
         }).setValue(App.stores.countyStore.getAt(5).get('value')), 
