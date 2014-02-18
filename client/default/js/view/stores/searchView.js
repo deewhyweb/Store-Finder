@@ -58,7 +58,9 @@
           store: App.stores.countyStore,
           listeners: {
               change : function(select,value){
-                 return false //this gives store bound to selectfield
+                App.views.mainView.show();
+                console.log('here');
+                
               }
           }
         }).setValue(App.stores.countyStore.getAt(5).get('value')), 
