@@ -56,7 +56,9 @@
           label: 'County',
           store: App.stores.countyStore,
           listeners: {
-              beforeselect: function() {return false;}
+              change : function(select,value){
+                 return false //this gives store bound to selectfield
+              }
           }
         }).setValue(App.stores.countyStore.getAt(5).get('value')), 
         new CustomSelectView({
