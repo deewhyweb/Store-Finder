@@ -50,13 +50,15 @@
       items: [{
         xtype: 'fieldset',
         title: 'Store Locator',
+
         items: [new Ext.form.Select({
-    options: [
-        {text: 'First Option',  value: 'first'},
-        {text: 'Second Option', value: 'second'},
-        {text: 'Third Option',  value: 'third'}
-    ]
-})
+          name: 'testSelect',
+            options: [
+                {text: 'First Option',  value: 'first'},
+                {text: 'Second Option', value: 'second'},
+                {text: 'Third Option',  value: 'third'}
+            ]
+        })
         ]
       }]
     }, 
