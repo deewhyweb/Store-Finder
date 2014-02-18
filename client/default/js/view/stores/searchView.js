@@ -51,36 +51,12 @@
         xtype: 'fieldset',
         title: 'Store Locator',
         items: [new Ext.form.Select({
-          id: 'countySelect',
-          name: 'county',
-          label: 'County',
-          modal: 0,
-          store: App.stores.countyStore,
-          listeners: {
-              change : function(select,value){
-                App.views.mainView.enable();
-                console.log('here');
-                
-              },
-              blur : function(select,value){
-                App.views.mainView.enable();
-                console.log('blurred');
-                
-              },
-              
-              hide : function(select,value){
-                App.views.mainView.enable();
-                console.log('hidden');
-                
-              }
-          }
-        }).setValue(App.stores.countyStore.getAt(5).get('value')), 
-        new CustomSelectView({
-          id: 'productSelect',
-          name: 'product',
-          label: 'Product',
-          store: App.stores.productStore,
-        }),
+    options: [
+        {text: 'First Option',  value: 'first'},
+        {text: 'Second Option', value: 'second'},
+        {text: 'Third Option',  value: 'third'}
+    ]
+})
         ]
       }]
     }, 
