@@ -7,7 +7,7 @@
     getPicker: function () {
       if (!this.picker) {
         this.picker = new Ext.Picker({
-          height: '260',
+          height: '560',
           slots: [{
             align       : 'center',
             name        : this.name,
@@ -21,7 +21,7 @@
             scope: this
           }
         });
-      }
+      } 
       return this.picker;
     }
   });

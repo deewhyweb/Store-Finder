@@ -54,6 +54,7 @@
           id: 'countySelect',
           name: 'county',
           label: 'County',
+          modal: 1,
           store: App.stores.countyStore,
           listeners: {
               change : function(select,value){
